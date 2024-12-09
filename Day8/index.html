@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: goldenrod;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello this is <span id="username">XYZ</span></h1>
+    <div class="box">
+     
+    </div>
+    <button onclick="changeName()">Change the Name</button>
+    <button onclick="changebox()">Change the Box</button>
+    <script>
+        const changeName=()=>{
+            const name = window.prompt("Enter your name")
+            const namePlace=document.getElementById("username").innerHTML=name;
+            
+        }
+        const changebox=()=>{
+            const box =document.getElementsByClassName("box")[0].style
+            
+            
+        }
+        
+    </script>
+</body>
+</html>

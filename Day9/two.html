@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: rgb(52, 52, 52);
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 10px 10px 15px gray;
+            margin: auto;
+            margin-top: 300px;
+        }
+    </style>
+</head>
+<body>
+     <script>
+
+        const sunlight=()=>{
+            let sun=document.getElementById("box")
+
+        
+        try{
+            sun.addEventListener("mouseenter",()=>{
+                sun.style.boxShadow="10px 10px 100px 10px yellow";
+                sun.style.backgroundColor="yellow";
+            })
+            sun.addEventListener("mouseleave",()=>{
+                sun.style.boxShadow="10px 10px 100px 10px gray";
+                sun.style.backgroundColor="gray";
+            })
+
+        }
+          catch(error){
+          console.log(error)
+        }
+          
+    }
+    sunlight()
+    </script>
+</body>
+</html>

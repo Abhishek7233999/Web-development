@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="selector">
+        <h1 id="idselector" class="classselector">Hello world</h1>
+        <button onclick="idselector()">Use id</button>
+        <button onclick="classselector()"> Use class</button>
+        <button onclick="queryselector()">Use query</button>
+
+     </div>
+<script>
+    const idselector=()=>{
+        let element=document.getElementById("idselector")
+        console.log(element)
+        element.innerHTML="This is XYZ I am using id selector"
+    }
+    const classselector=()=>{
+        document.getElementsByClassName("classselector")[0].innerHTML="This is Xyz and I am Using Classs selector"
+    }
+    const queryselector=()=> {
+        document.queryselector("classselector").innerHTML="This is Xyz and I am Using Classs selector"
+    }
+</script>
+</body>
+</html>
